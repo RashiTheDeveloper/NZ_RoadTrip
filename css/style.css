@@ -72,21 +72,11 @@ a:hover { color: var(--white); }
   backdrop-filter: blur(16px);
 }
 .header-top {
-background-image:
-linear-gradient(
-rgba(0, 0, 0, 0.45),
-rgba(0, 0, 0, 0.45)
-),
-url('images/nz-banner.jpg');
- bottom: ;ackground-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-min-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  
 }
 
 .brand {
