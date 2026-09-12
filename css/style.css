@@ -126,6 +126,14 @@ nav a[aria-current="page"] {
   align-items: end;
   padding: 7rem 6vw 4rem;
   overflow: hidden;
+  height: 100vh;
+background: linear-gradient(
+rgba(0,0,0,0.45),
+rgba(0,0,0,0.45)
+),
+url('images/nz-banner.jpg');
+background-size: cover;
+background-position: center;
 }
 .hero-bg {
   position: absolute;
