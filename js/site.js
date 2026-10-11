@@ -3,6 +3,8 @@
   const links = [
     ["index.html", "Home"],
     ["itinerary.html", "Itinerary"],
+    ["map.html", "Route map"],
+    ["weather.html", "Weather"],
     ["places.html", "Places"],
     ["kai.html", "Kai"],
     ["kupu.html", "Te reo"],

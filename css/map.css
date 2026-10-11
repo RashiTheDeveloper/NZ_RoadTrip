@@ -1,0 +1,18 @@
+/* Route map page. Builds on style.css tokens. */
+.nzmap { margin: 1.6rem 0; }
+.svgbox { border: 1px solid var(--line); background: #0b1728; line-height: 0; }
+.svgbox svg { width: 100%; height: auto; display: block; }
+.nzmap.wide .svgbox { max-width: 600px; margin: 0 auto; }
+.nzmap figcaption { margin-top: 0.5rem; font-size: 0.85rem; color: var(--mist); text-align: center; }
+.maps2 { display: grid; gap: 1.2rem; grid-template-columns: 1fr 1.25fr; align-items: start; }
+.svgbox a:focus-visible { outline: 2px solid #e6c98a; }
+.pin { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; font: 600 0.8rem var(--sans); border: 2px solid #8fd8c0; color: #fff; background: #0b1728; box-sizing: border-box; flex: none; }
+.pin.S { border-color: #8ec9dc; }
+.pin.N.sleep { background: #8fd8c0; color: #05080d; } .pin.S.sleep { background: #8ec9dc; color: #05080d; }
+.pin.X { border-color: #e6c98a; background: #e6c98a; color: #05080d; border-radius: 4px; transform: rotate(45deg); } 
+.stops { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
+.stop { display: flex; gap: 0.8rem; align-items: flex-start; border: 1px solid var(--line); background: rgba(18, 38, 61, 0.4); padding: 0.8rem 0.9rem; }
+.stop strong { color: var(--white); }
+.stop small { display: block; color: var(--glacier); font-size: 0.78rem; }
+.stop p { margin: 0.4rem 0 0; color: var(--mist); font-size: 0.9rem; }
+@media (max-width: 800px) { .maps2 { grid-template-columns: 1fr; } }

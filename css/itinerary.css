@@ -1,0 +1,33 @@
+/* Itinerary page additions. Builds on style.css tokens. */
+:root { --north: #8fd8c0; --gold: #e6c98a; }
+html { scroll-padding-top: 6rem; }
+.route { list-style: none; margin: 0 0 1rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.route li { font-size: 0.82rem; padding: 0.25rem 0.65rem; border: 1px solid var(--line); border-left: 3px solid var(--north); color: var(--silver); }
+.route li.S { border-left-color: var(--glacier); }
+.daynav { position: static; display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.2rem; }
+.daynav .chip { border-left: 3px solid var(--north); }
+.daynav .chip.S { border-left-color: var(--glacier); }
+.daynav .chip:hover { color: var(--white); border-color: var(--glacier); }
+.checks { list-style: none; margin: 0.8rem 0 2.5rem; padding: 0; display: grid; gap: 0.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.checks label { display: flex; gap: 0.7rem; align-items: center; padding: 0.7rem 0.9rem; border: 1px solid var(--line); background: rgba(18, 38, 61, 0.4); cursor: pointer; }
+.checks input { width: 1.15rem; height: 1.15rem; accent-color: var(--glacier); flex: none; }
+.checks input:checked + span { color: var(--mist); text-decoration: line-through; }
+.checks label:focus-within { outline: 2px solid var(--gold); outline-offset: 2px; }
+.day time { display: block; line-height: 1.4; }
+.day.N time { color: var(--north); }
+.day .sleep { display: block; margin-top: 0.45rem; text-transform: none; letter-spacing: 0; font-size: 0.82rem; color: var(--silver); }
+.day-img { width: 100%; height: 150px; object-fit: cover; border: 1px solid var(--line); margin-bottom: 1rem; }
+.plan li.d span:first-child { color: var(--mist); font-weight: 400; }
+.plan li.b span:first-child { font-weight: 600; }
+.plan li.f .note { color: var(--north); }
+.plan li span:first-child a { color: var(--white); text-decoration: underline; text-decoration-color: var(--lagoon); text-underline-offset: 3px; }
+.plan li span:first-child a:hover { color: var(--glacier); }
+.plan .when { text-align: right; }
+.day-note { margin: 0.8rem 0 0; padding: 0.7rem 0.9rem; font-size: 0.9rem; color: var(--silver); background: rgba(142, 201, 220, 0.08); border-left: 2px solid var(--gold); }
+.tips { margin-top: 1rem; }
+@media (max-width: 700px) { .plan .when { text-align: left; } .day-img { height: 120px; } }
+
+.plan li.x span:first-child { font-weight: 400; color: var(--silver); }
+.plan li.x .when { color: var(--mist); font-style: italic; }
+.plan .tip { color: var(--mist); font-size: 0.86rem; }
+.tip-grid { margin: 0; }

@@ -1,0 +1,21 @@
+/* Weather and packing page. Builds on style.css tokens. */
+.tablewrap { overflow-x: auto; margin: 1rem 0 2rem; border: 1px solid var(--line); }
+.tablewrap.small { max-width: 34rem; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+th, td { text-align: left; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); vertical-align: top; }
+thead th { border-top: 0; color: var(--glacier); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(18, 38, 61, 0.6); }
+tbody th { color: var(--white); font-weight: 500; }
+td { color: var(--silver); }
+td:nth-child(3) { white-space: nowrap; color: var(--white); }
+.grid3 { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin: 1rem 0 2rem; }
+.tip h3 { margin: 0 0 0.3rem; font-size: 1.15rem; color: var(--white); }
+.tip p { margin: 0; color: var(--silver); font-size: 0.93rem; }
+h3.sub { margin: 1.6rem 0 0.2rem; color: var(--white); }
+.checks { list-style: none; margin: 0.8rem 0 2rem; padding: 0; display: grid; gap: 0.5rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.checks label { display: flex; gap: 0.7rem; align-items: center; padding: 0.7rem 0.9rem; border: 1px solid var(--line); background: rgba(18, 38, 61, 0.4); cursor: pointer; }
+.checks input { width: 1.15rem; height: 1.15rem; accent-color: var(--glacier); flex: none; }
+.checks input:checked + span { color: var(--mist); text-decoration: line-through; }
+.checks label:focus-within { outline: 2px solid #e6c98a; outline-offset: 2px; }
+.eat { list-style: none; margin: 1rem 0; padding: 0; display: grid; gap: 0.6rem; }
+.eat li { padding: 0.7rem 0.9rem; border-left: 2px solid var(--glacier); background: rgba(18, 38, 61, 0.35); color: var(--silver); }
+.eat strong { color: var(--white); margin-right: 0.4rem; }
